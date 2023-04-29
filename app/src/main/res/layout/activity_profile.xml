@@ -8,14 +8,45 @@
     android:background="@drawable/linear_background">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/profilePicCard"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginBottom="150dp"
+        android:layout_marginTop="80dp"
+        app:cardCornerRadius="150dp"
+        app:cardElevation="4dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/profilePicParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:contentDescription="profileImage"
+                android:id="@+id/profilePicImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="24dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profilePicCard"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
         app:cardCornerRadius="20dp"
-        app:cardElevation="8dp">
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:cardElevation="0dp">
 
     </androidx.cardview.widget.CardView>
+
 </RelativeLayout>
