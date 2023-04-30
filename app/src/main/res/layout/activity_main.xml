@@ -23,14 +23,15 @@
             app:cardCornerRadius="50dp"
             android:layout_centerVertical="true"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="20dp">
+            android:layout_marginStart="20dp"
+            android:elevation="10dp">
 
             <ImageView
                 android:id="@+id/profilePicture"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
-                android:src="@drawable/person" />
+                android:src="@drawable/soumil_pic" />
         </androidx.cardview.widget.CardView>
 
         <TextView
@@ -41,7 +42,7 @@
             android:layout_toEndOf="@id/profileBg"
             android:layout_marginStart="20dp"
             android:text="Hi,"
-            android:textColor="@color/text_color_one"
+            android:textColor="@color/dark_blue"
             android:textSize="36sp" />
 
         <TextView
@@ -53,7 +54,7 @@
             android:layout_toEndOf="@id/greetingText"
             android:text="Soumil"
             android:fontFamily="@font/roboto_medium"
-            android:textColor="@color/text_color_one"
+            android:textColor="@color/dark_blue"
             android:textSize="36sp" />
 
         <ImageButton

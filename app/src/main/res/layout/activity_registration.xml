@@ -9,7 +9,7 @@
     <RelativeLayout
         android:id="@+id/greetAnimParent"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="350dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true">
 
@@ -34,12 +34,143 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="16dp"
-            app:cardCornerRadius="0dp"
-            app:cardElevation="10dp"
             app:cardBackgroundColor="#ffffff"
             app:cardPreventCornerOverlap="false"
-            android:background="@drawable/rounded_top_corners_card">
+            android:backgroundTint="@android:color/transparent"
+            android:background="@android:color/transparent"
+            app:cardElevation="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_top_corners_card">
+
+                <ImageView
+                    android:layout_width="380dp"
+                    android:layout_height="380dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:translationX="250dp"
+                    android:src="@drawable/circle_shape_right" />
+                <ImageView
+                    android:layout_width="380dp"
+                    android:layout_height="380dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:translationX="-180dp"
+                    android:translationY="280dp"
+                    android:src="@drawable/circle_shape_left"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true">
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="welcome to"
+                        android:textSize="50sp"
+                        android:textColor="@color/grey"
+                        android:fontFamily="@font/sacramento"
+                        android:clickable="false"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="-30dp"
+                        android:fontFamily="@font/raleway_bold"
+                        android:text="dormentor"
+                        android:textColor="#00C1E4"
+                        android:textSize="60sp"
+                        android:clickable="false"/>
+
+<!--                    <EditText-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:hint="Email Address"-->
+<!--                        android:background="@drawable/custom_edit_text"-->
+<!--                        android:layout_marginTop="50dp"-->
+<!--                        android:layout_marginStart="20dp"-->
+<!--                        android:layout_marginEnd="20dp"-->
+<!--                        android:paddingStart="20dp"-->
+<!--                        android:elevation="8dp"/>-->
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                        android:id="@+id/textInputLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email Address"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="50dp"
+                        app:boxStrokeColor="@color/medium_blue"
+                        app:hintTextColor="@color/black"
+                        app:hintAnimationEnabled="true"
+                        android:outlineAmbientShadowColor="@color/black"
+                        android:outlineSpotShadowColor="@color/black"
+                        app:startIconDrawable="@drawable/person_email_icon"
+                        android:background="@color/white"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusTopStart="8dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/emailAddTextInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:id="@+id/textPassLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="20dp"
+                        app:boxStrokeColor="@color/medium_blue"
+                        app:hintTextColor="@color/black"
+                        app:hintAnimationEnabled="true"
+                        android:outlineAmbientShadowColor="@color/black"
+                        android:outlineSpotShadowColor="@color/black"
+                        app:startIconDrawable="@drawable/lock_password_icon"
+                        android:background="@color/white"
+                        app:boxCornerRadiusBottomEnd="8dp"
+                        app:boxCornerRadiusBottomStart="8dp"
+                        app:boxCornerRadiusTopEnd="8dp"
+                        app:boxCornerRadiusTopStart="8dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/passTextInput"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"/>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/loginBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="68dp"
+                        android:backgroundTint="@color/ocean_blue"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginEnd="70dp"
+                        android:text="login"
+                        android:fontFamily="@font/raleway_medium"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:letterSpacing="0.1"/>
+
+                </LinearLayout>
+            </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
