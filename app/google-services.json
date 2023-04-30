@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "239946074222",
+    "project_id": "dormentor-soumil",
+    "storage_bucket": "dormentor-soumil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239946074222:android:52f6caf5c629b214fb7e7f",
+        "android_client_info": {
+          "package_name": "com.soumil.dormentor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239946074222-ijtms6hredtmo47at46kjjdb3skdue71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3pWGFCIoVZUu0D50JjWb2F4Bchevwq90"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239946074222-ijtms6hredtmo47at46kjjdb3skdue71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
