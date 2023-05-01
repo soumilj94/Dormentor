@@ -152,7 +152,8 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/passTextInput"
                             android:layout_width="match_parent"
-                            android:layout_height="60dp"/>
+                            android:layout_height="60dp"
+                            android:inputType="textPassword"/>
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <androidx.appcompat.widget.AppCompatButton
