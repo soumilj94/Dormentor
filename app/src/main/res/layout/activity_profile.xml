@@ -23,16 +23,6 @@
             android:layout_marginStart="20dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"/>
-<!--        create a  back buttom on right direction arrow-->
-        <ImageView
-            android:id="@+id/goBackMainButton"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/right_arrow_icon"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="20dp"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="4dp"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -86,186 +76,26 @@
             android:layout_below="@id/userName"/>
     </RelativeLayout>
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/logOutBtnPrnt"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/details1"
-        android:layout_centerHorizontal="true"
-        android:orientation="vertical">
-
-        <RelativeLayout
+        android:layout_centerVertical="true">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logoutBtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginTop="20dp"
-            android:layout_centerHorizontal="true">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Course"
-                android:layout_alignParentStart="true"
-                android:textSize="20sp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="B.Tech"
-                android:layout_alignParentEnd="true"
-                android:textSize="20sp"/>
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_centerHorizontal="true">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Branch"
-                android:layout_alignParentStart="true"
-                android:textSize="20sp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="CS-IT"
-                android:layout_alignParentEnd="true"
-                android:textSize="20sp"/>
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_centerHorizontal="true">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Duration"
-                android:layout_alignParentStart="true"
-                android:textSize="20sp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2021 - 25"
-                android:layout_alignParentEnd="true"
-                android:textSize="20sp"/>
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_centerHorizontal="true">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Semester"
-                android:layout_alignParentStart="true"
-                android:textSize="20sp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4th"
-                android:layout_alignParentEnd="true"
-                android:textSize="20sp"/>
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_centerHorizontal="true">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="D.O.B"
-                android:layout_alignParentStart="true"
-                android:textSize="20sp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9-Apr-2003"
-                android:layout_alignParentEnd="true"
-                android:textSize="20sp"/>
-        </RelativeLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/black"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"/>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="40dp"
-            android:layout_centerHorizontal="true">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Phone"
-                android:layout_alignParentStart="true"
-                android:textSize="20sp"
-                android:textColor="@color/black"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8770128649"
-                android:layout_alignParentEnd="true"
-                android:textSize="20sp"/>
-        </RelativeLayout>
-
-    </LinearLayout>
+            android:layout_height="68dp"
+            android:backgroundTint="@color/ocean_blue"
+            android:layout_marginStart="70dp"
+            android:layout_marginEnd="70dp"
+            android:text="logout"
+            android:fontFamily="@font/raleway_medium"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:letterSpacing="0.1"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
 
 
 </RelativeLayout>

@@ -8,6 +8,7 @@ import android.os.Vibrator
 import androidx.cardview.widget.CardView
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
