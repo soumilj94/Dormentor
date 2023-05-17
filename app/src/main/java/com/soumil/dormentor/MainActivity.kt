@@ -1,5 +1,6 @@
 package com.soumil.dormentor
 
+import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,7 @@ class MainActivity : AppCompatActivity() {
 
         val myProfile = findViewById<CardView>(R.id.profileBg)
         val gatePass = findViewById<CardView>(R.id.gatePassBtn)
+        val emergCtn = findViewById<CardView>(R.id.emergencyBtn)
 
         myProfile.setOnClickListener{
             val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
@@ -23,6 +25,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ProfileActivity::class.java)
             startActivity(intent)
             overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right)
+        }
+
+        emergCtn.setOnClickListener{
+
         }
 
         gatePass.setOnClickListener{
