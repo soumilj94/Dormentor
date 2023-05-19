@@ -43,7 +43,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/soumil_pic"/>
+                android:src="@drawable/icon_user"/>
         </androidx.cardview.widget.CardView>
     </RelativeLayout>
 
@@ -58,7 +58,7 @@
             android:id="@+id/userName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Soumil Jaiswal"
+            android:text="User"
             android:textColor="@color/dark_blue"
             android:textSize="34sp"
             android:layout_marginTop="10dp"
@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:text="2021BTCS030"
+            android:text="80432716493"
             android:textSize="24dp"
             android:layout_marginTop="5dp"
             android:fontFamily="@font/roboto"

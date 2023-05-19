@@ -43,13 +43,9 @@ class Registration : AppCompatActivity() {
 
 
         emailAdd.setOnClickListener{
-            val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
-            vibrator.vibrate(20)
         }
 
         password.setOnClickListener{
-         val vibrator = getSystemService(Context.VIBRATOR_SERVICE) as Vibrator
-         vibrator.vibrate(20)
         }
 
         loginButton.setOnClickListener {
