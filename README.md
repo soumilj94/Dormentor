@@ -12,16 +12,6 @@ Dormentor is a university student assistant app designed to help students manage
 - **Event Scheduling**: Schedule and manage university events.
 - **Responsive Design**: Optimized for mobile devices.
 
-## Getting Started
-
-To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-- Flutter SDK: [Install Flutter](https://flutter.dev/docs/get-started/install)
-- Dart SDK: Included with Flutter
-- Firebase account: [Set up Firebase](https://firebase.google.com/)
-
 ### Installation
 
 1. Clone the repo
